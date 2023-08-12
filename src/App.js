@@ -21,12 +21,12 @@ function App() {
     setInput(input.slice(0, -1));
   };
   return (
-    <div class="container">
-      <div class="calculator">
+    <div className="container">
+      <div className="calculator">
         <h5>CASİO</h5>
         <form>
-          <div class="display">
-            <input type="text" value={input} readonly="readonly" />
+          <div className="display">
+            <input type="text" value={input} readOnly="readOnly" />
           </div>
           <div>
             <input type="button" value="AC" onClick={handleClear} />
@@ -58,7 +58,7 @@ function App() {
             <input
               type="button"
               value="="
-              class="equal"
+              className="equal"
               onClick={handleEqual}
             />
           </div>
